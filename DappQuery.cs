@@ -5,9 +5,6 @@ using System.Text;
 
 Console.OutputEncoding = Encoding.UTF8;
 
-// =========================================
-// HELPERS
-// =========================================
 
 static void C(string text, ConsoleColor color, bool newLine = true)
 {
@@ -134,9 +131,6 @@ static void PrintSuccess(string label, string value)
     C(value, ConsoleColor.White);
 }
 
-// =========================================
-// PARSE ARGUMENTS
-// =========================================
 
 var argsDict = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
 var listArgs = new List<string>();
@@ -163,8 +157,6 @@ for (int i = 0; i < args.Length; i++)
 }
 
 // =========================================
-// HELP / VALIDATION
-// =========================================
 
 if (args.Contains("-help", StringComparer.OrdinalIgnoreCase) || args.Length == 0)
 {
@@ -187,9 +179,8 @@ string canisterId = argsDict["-a"];
 string method     = argsDict["-method"];
 bool simpleMode   = args.Contains("-simple", StringComparer.OrdinalIgnoreCase);
 
-// =========================================
-// DISPLAY SESSION INFO
-// =========================================
+
+// ========================================= Sesja ( stanowienie połączenia dla SQL  
 
 if (!simpleMode)
 {
@@ -216,9 +207,8 @@ if (!simpleMode)
 var agent     = new HttpAgent(new Uri(replicaUrl));
 var principal = Principal.FromText(canisterId);
 
-// =========================================
-// BUILD CANDID ARGS
-// =========================================
+
+//  Podłączanie argumentów dla metod
 
 CandidArg candidArg;
 
@@ -235,9 +225,7 @@ else
     candidArg = CandidArg.FromCandid(candidValues);
 }
 
-// =========================================
-// CALL
-// =========================================
+// Główne wywołanie
 
 bool isQuery = method.Contains("query", StringComparison.OrdinalIgnoreCase);
 
