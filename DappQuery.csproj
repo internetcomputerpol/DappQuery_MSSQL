@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <ApplicationIcon>canister.ico</ApplicationIcon>
+    <Title>dAppQuery</Title>
+    <Version>1.0.2</Version>
+    <Authors>SBC-[]-[]-[]-</Authors>
+    <Company>SimpleBlockchainCompany-[]-[]-[]-</Company>
+    <Description>NET middleware for connecting to the ICP Network to perform canister queries and updates. This software allows a simple client to exchange data on a Windows system without the need to install a developer environment.</Description>
+    <Copyright>MIT</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="canister.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EdjCase.ICP.Agent" Version="8.0.0-pre.1" />
+  </ItemGroup>
+
+</Project>

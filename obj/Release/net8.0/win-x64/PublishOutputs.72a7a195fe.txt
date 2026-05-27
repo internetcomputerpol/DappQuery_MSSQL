@@ -1,0 +1,2 @@
+C:\Users\Lenovo\source\repos\DappQuery\DappQuery\bin\Release\net8.0\win-x64\publish\DappQuery.pdb
+C:\Users\Lenovo\source\repos\DappQuery\DappQuery\bin\Release\net8.0\win-x64\publish\DappQuery.exe
