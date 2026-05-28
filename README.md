@@ -12,6 +12,7 @@ Ver 1.0 ( with default update calls )
 https://arweave.net/qBMl0rVehPJcM7wvaqqRpAM1tOWTCKiQ8822jP_bq5c
 
 SHA256 696B31DEB85003E460EB5D633DCD1C1B4CBC87A95FEA672FCEFBFEE782BF6EDB
+
 ----------------------
 Ver 1.2 ( Both update and query calls handle )
 
